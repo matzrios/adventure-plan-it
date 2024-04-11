@@ -1,9 +1,66 @@
-# React + Vite
+# Project Title
+Adventure Plan-It
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+Adventure Plan-It is a place for people who want to start their vacations or in this scenario their adventure with their wanted activities.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# adventure-plan-it
+### Problem
+
+I have noticed that most travel planners always start with the locations and planning with that in mind. Why not start the travel plan with the activities instead and have options of destinations based on the chosen activities?
+
+### User Profile
+
+- Adventure seekers:
+    - looking at destinations based on the activities they want to do
+
+### Features
+
+- As a user, I want to be able to find destination options based on activities I want to do
+- As a user, I want to be able to find the closest places for the activities in the destination I have chosen
+- As a user, I want to be able to find the highest-rated places for the activities in the destination I have chosen
+- As a user, I want to be able to find the closest hotels for the activities in the destination I have chosen
+- As a user, I want to be able to find the highest-rated hotels for the activities in the destination I have chosen
+
+## Implementation
+
+### Tech Stack
+
+- React + Vite
+- JavaScript 
+- MySQL
+- Express
+- Client libraries: 
+    - react
+    - react-router
+    - axios
+- Server libraries:
+    - knex
+    - express
+    - bcrypt for password hashing
+
+### APIs
+
+- No external APIs will be used for the first sprint
+
+### Sitemap
+
+- Landing page
+- Activity Menu
+- Location Results
+- Detail Page
+
+### Mockups
+
+#### Home Page
+![](landing-page.png)
+
+#### Activity Menu
+![](activity-menu.png)
+
+#### Location Results
+![](location-results.png)
+
+#### Detail Page
+![](detail-page.png)
+
