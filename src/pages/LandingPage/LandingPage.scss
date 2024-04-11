@@ -1,0 +1,27 @@
+@use "../../styles/partials/variables" as *;
+
+
+.logo--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+  background: url(../../assets/images/logo.jpg) 0 0 / cover no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: left;
+  line-height: 1.1;
+
+  &__text-2 {
+    font-size: 10rem;
+  }
+}
+
