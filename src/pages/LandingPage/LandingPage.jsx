@@ -1,5 +1,6 @@
 import "./LandingPage.scss";
 import FrameOne from "../../assets/images/Frame1.png";
+import { Link } from "react-router-dom";
 
 export default function LandingPage() {
   return (
@@ -15,7 +16,9 @@ export default function LandingPage() {
       </div>
 
       <div className="get-started-button--container">
+      <Link className="linkToActivities" to={`/activities`} >
         <button className="get-started-button">Ready to Start?</button>
+        </Link>
       </div>
     </div>
   );
