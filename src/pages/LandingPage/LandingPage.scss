@@ -1,0 +1,56 @@
+@use "../../styles/partials/variables" as *;
+
+.landing-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15rem 10rem 2rem 10rem;
+}
+
+.logo {
+  background: url(../../assets/images/logo.jpg);
+  background-position: bottom;
+  background-size: contain no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 900px;
+  &__text {
+    font-size: 8rem;
+    font-weight: 900;
+    text-align: left;
+    line-height: 1.1;
+  }
+}
+
+.country-collage {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 25rem;
+}
+
+.get-started-button--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.get-started-button {
+  background-color: $normal-blue;
+  color: white;
+  height: 64px;
+  width: 180px;
+  border: none;
+  box-sizing: border-box;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+* {
+  text-decoration: none;
+}

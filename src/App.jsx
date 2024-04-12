@@ -8,11 +8,13 @@ function App() {
   return (
     <>
       <BrowserRouter>
+      <div className="styling-div">
       <Routes>
         <Route path='/' element={<LandingPage />} />
         <Route />
         <Route />
       </Routes>
+      </div>
       </BrowserRouter>
     </>
   )
