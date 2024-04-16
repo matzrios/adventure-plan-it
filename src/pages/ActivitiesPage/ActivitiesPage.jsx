@@ -6,6 +6,8 @@ import Snowboarding from "../../assets/images/snowboarding.png";
 import Hiking from "../../assets/images/hiking.png";
 import Surfing from "../../assets/images/surfing.png";
 import Sailing from "../../assets/images/sailing.png";
+import Home from "../../assets/icons/home.png";
+import Back from "../../assets/icons/back.png";
 import { Link } from "react-router-dom";
 
 export default function LandingPage() {
@@ -13,6 +15,15 @@ export default function LandingPage() {
     <div className="activities-page--container">
       <div className="activities-page-title--container">
         <h2 className="activities-page-title">Activities</h2>
+      </div>
+
+      <div className="activities-page--navigation">
+        <Link className="linkToPreviousPage" to={`/`}>
+          <img src={Back} className="back-button" />
+        </Link>
+        <Link className="linkToHome" to={`/`}>
+          <img src={Home} className="home-button" />
+        </Link>
       </div>
 
       <div className="activities-page-cards--container">
@@ -54,9 +65,16 @@ export default function LandingPage() {
             <img className="activity-card--image" src={Sailing} alt="sailing" />
             <p className="activity-card--title">Sailing</p>
           </div>
-        </div>
+      <div className="activities-page-instruction">
+        <p className="instruction">Select One to Two Activities</p>
       </div>
-
+        </div>
+        <div className="next-button--container">
+      <Link className="linkToLocations" to={`/locations`} >
+        <button className="next-button">Next</button>
+        </Link>
+      </div>
+      </div>
       <div className="activities-country-collage--container">
         <img className="activities-country-collage" src={FrameTwo} alt="" />
       </div>
