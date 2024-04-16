@@ -4,6 +4,7 @@ import "./App.scss";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import ActivitiesPage from "./pages/ActivitiesPage/ActivitiesPage";
 import LocationsPage from "./pages/LocationsPage/LocationsPage";
+import LocationDetail from "./pages/LocationDetail/LocationDetail";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
             <Route path="/" element={<LandingPage />} />
             <Route path="/activities" element={<ActivitiesPage />} />
             <Route path="/locations" element={<LocationsPage />} />
+            <Route path="/locationdetail" element={<LocationDetail />} />
           </Routes>
         </div>
       </BrowserRouter>
