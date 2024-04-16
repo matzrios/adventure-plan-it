@@ -3,7 +3,7 @@ import Dubai from "../../assets/images/dubai.png";
 import HongKong from "../../assets/images/hongkong.jpeg";
 import Niseko from "../../assets/images/niseko.jpg";
 import Portland from "../../assets/images/portland.jpeg";
-import Singapore from "../../assets/images/singapore.png";
+import Singapore from "../../assets/images/singapore.jpg";
 import Vancouver from "../../assets/images/vancouver.webp";
 import Home from "../../assets/icons/home.png";
 import Back from "../../assets/icons/back.png";
