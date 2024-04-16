@@ -1,0 +1,99 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.locations-page--container {
+  background: url(/src/assets/images/background.jpg);
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.locations-page-title {
+  color: $white;
+  font-size: 4rem;
+  position: fixed;
+  left: 4rem;
+  top: 3.5rem;
+}
+
+.locations-page--navigation {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  position: fixed;
+  top: 6rem;
+  right:5rem;
+}
+
+.locations-page-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  flex-direction: row;
+  padding-top: 12rem;
+  padding-bottom: 10rem;
+}
+
+.location-card {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 50%;
+  gap: 1rem;
+
+  &--image {
+    height: 10rem;
+    padding-bottom: 1rem;
+  }
+
+  &--title {
+    color: $white;
+
+  }
+
+  &--detail {
+    color: $white;
+    font-size: 0.7rem;
+  }
+}
+
+.location-card-detail--container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.instruction {
+    color: $white;
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+
+.locations-country-collage {
+  position: fixed;
+  bottom: 0;
+  max-height: 22%;
+  &--container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.locations-button--container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  
+  .locations-button {
+    background-color: $normal-blue;
+    color: $white;
+    height: 40px;
+    width: 140px;
+    border: none;
+    box-sizing: border-box;
+  }
