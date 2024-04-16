@@ -10,7 +10,7 @@ import Home from "../../assets/icons/home.png";
 import Back from "../../assets/icons/back.png";
 import { Link } from "react-router-dom";
 
-export default function LandingPage() {
+export default function ActivitiesPage() {
   return (
     <div className="activities-page--container">
       <div className="activities-page-title--container">
