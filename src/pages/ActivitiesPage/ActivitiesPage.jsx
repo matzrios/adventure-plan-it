@@ -65,15 +65,15 @@ export default function ActivitiesPage() {
             <img className="activity-card--image" src={Sailing} alt="sailing" />
             <p className="activity-card--title">Sailing</p>
           </div>
-      <div className="activities-page-instruction">
+        </div>
+        <div className="activities-page-instruction">
         <p className="instruction">Select One to Two Activities</p>
       </div>
-        </div>
         <div className="next-button--container">
-      <Link className="linkToLocations" to={`/locations`} >
-        <button className="next-button">Next</button>
-        </Link>
-      </div>
+          <Link className="linkToLocations" to={`/locations`}>
+            <button className="next-button">Next</button>
+          </Link>
+        </div>
       </div>
       <div className="activities-country-collage--container">
         <img className="activities-country-collage" src={FrameTwo} alt="" />
