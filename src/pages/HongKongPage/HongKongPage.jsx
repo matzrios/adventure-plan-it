@@ -81,7 +81,7 @@ export default function HongKongPage() {
             <div className="activity-location-button--container">
               <button
                 role="link"
-                onClick={() => openInNewTab("https://www.google.com/maps")}
+                onClick={() => openInNewTab("https://www.google.com/maps/search/hong+kong+hiking/@22.29195,114.1802443,12z/data=!3m1!4b1?entry=ttu")}
                 className="activity-location-button"
               >
                 Open in Maps
@@ -98,7 +98,7 @@ export default function HongKongPage() {
             <div className="activity-location-button--container">
               <button
                 role="link"
-                onClick={() => openInNewTab("https://www.google.com/maps")}
+                onClick={() => openInNewTab("https://www.google.com/maps/search/hong+kong+kayak/@22.2919916,114.1802444,12z/data=!3m1!4b1?entry=ttu")}
                 className="activity-location-button"
               >
                 Open in Maps
@@ -119,7 +119,7 @@ export default function HongKongPage() {
             <div className="activity-location-button--container">
               <button
                 role="link"
-                onClick={() => openInNewTab("https://www.google.com/maps")}
+                onClick={() => openInNewTab("https://www.google.com/maps/search/hong+kong+hotels/@22.3056508,114.1609562,14z/data=!3m1!4b1?entry=ttu")}
                 className="activity-location-button"
               >
                 Open in Maps

@@ -81,7 +81,7 @@ export default function DubaiPage() {
             <div className="activity-location-button--container">
               <button
                 role="link"
-                onClick={() => openInNewTab("https://www.google.com/maps")}
+                onClick={() => openInNewTab("https://www.google.com/maps/search/dubai+surfing/@25.0729498,55.0735696,11z/data=!3m1!4b1?entry=ttu")}
                 className="activity-location-button"
               >
                 Open in Maps
@@ -98,7 +98,7 @@ export default function DubaiPage() {
             <div className="activity-location-button--container">
               <button
                 role="link"
-                onClick={() => openInNewTab("https://www.google.com/maps")}
+                onClick={() => openInNewTab("https://www.google.com/maps/search/dubai+sailing/@25.0731318,55.0735701,11z/data=!3m1!4b1?entry=ttu")}
                 className="activity-location-button"
               >
                 Open in Maps
@@ -119,7 +119,7 @@ export default function DubaiPage() {
             <div className="activity-location-button--container">
               <button
                 role="link"
-                onClick={() => openInNewTab("https://www.google.com/maps")}
+                onClick={() => openInNewTab("https://www.google.com/maps/search/dubai+hotels/@25.0733137,55.0735707,11z/data=!3m1!4b1?entry=ttu")}
                 className="activity-location-button"
               >
                 Open in Maps
