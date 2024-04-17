@@ -81,7 +81,7 @@ export default function NisekoPage() {
             <div className="activity-location-button--container">
               <button
                 role="link"
-                onClick={() => openInNewTab("https://www.google.com/maps")}
+                onClick={() => openInNewTab("https://www.google.com/maps/search/niseko+skating/@42.850406,140.6695539,14z?entry=ttu")}
                 className="activity-location-button"
               >
                 Open in Maps
@@ -100,7 +100,7 @@ export default function NisekoPage() {
             <div className="activity-location-button--container">
               <button
                 role="link"
-                onClick={() => openInNewTab("https://www.google.com/maps")}
+                onClick={() => openInNewTab("https://www.google.com/maps/search/niseko+snowboarding/@42.8504023,140.6695539,14z/data=!3m1!4b1?entry=ttu")}
                 className="activity-location-button"
               >
                 Open in Maps
@@ -121,7 +121,7 @@ export default function NisekoPage() {
             <div className="activity-location-button--container">
               <button
                 role="link"
-                onClick={() => openInNewTab("https://www.google.com/maps")}
+                onClick={() => openInNewTab("https://www.google.com/maps/search/niseko+hotels/@42.8503986,140.6695539,14z/data=!3m1!4b1?entry=ttu")}
                 className="activity-location-button"
               >
                 Open in Maps
