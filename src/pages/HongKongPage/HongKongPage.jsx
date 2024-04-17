@@ -14,13 +14,18 @@ import Snowboarding from "../../assets/images/snowboarding.png";
 import Hiking from "../../assets/images/hiking.png";
 import Surfing from "../../assets/images/surfing.png";
 import Sailing from "../../assets/images/sailing.png";
-import SurfingLocation from "../../assets/images/dubai-surfing-map.png";
-import SailingLocation from "../../assets/images/dubai-sailing-map.png";
-import DubaiHotelLocation from "../../assets/images/dubai-hotels-map.png";
+import HKHiking from "../../assets/images/hongkong-maps/hongkong-hiking.png";
+import HKHKayak from "../../assets/images/hongkong-maps/hongkong-kayak.png";
+import HKHotels from "../../assets/images/hongkong-maps/hongkong-hotels.png";
 
 export default function HongKongPage() {
-  const backgroundImage = "linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5) ), url(" + HongKong + ")";
-
+  const backgroundImage =
+    "linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5) ), url(" +
+    HongKong +
+    ")";
+  const openInNewTab = (url) => {
+    window.open(url, "_blank", "noreferrer");
+  };
   return (
     <div
       className="location-detail-page--container"
@@ -48,52 +53,56 @@ export default function HongKongPage() {
           <div className="location-activity-card">
             <img
               className="location-activity-card--image"
-              src={Surfing}
-              alt="surfing"
+              src={Hiking}
+              alt="hiking"
             />
-            <p className="location-activity-card--title">Surfing</p>
+            <p className="location-activity-card--title">Hiking</p>
           </div>
 
           <div className="location-activity-card">
             <img
               className="location-activity-card--image"
-              src={Sailing}
-              alt="sailing"
+              src={Kayaking}
+              alt="kayaking"
             />
-            <p className="location-activity-card--title">Sailing</p>
+            <p className="location-activity-card--title">Kayaking</p>
           </div>
         </div>
       </div>
       <div className="activity-location-maps--container">
         <div className="activity-location-maps">
           <div className="activity-location-map">
-            <p className="activity-location-map--title">Surfing Locations</p>
+            <p className="activity-location-map--title">Hiking Locations</p>
             <img
               className="activity-location-map--image"
-              src={SurfingLocation}
-              alt="surfing map"
+              src={HKHiking}
+              alt="hiking map"
             />
             <div className="activity-location-button--container">
-              <Link className="linkToLocations" to={`/dubai`}>
-                <button className="activity-location-button">
-                  Open in Maps
-                </button>
-              </Link>
+              <button
+                role="link"
+                onClick={() => openInNewTab("https://www.google.com/maps")}
+                className="activity-location-button"
+              >
+                Open in Maps
+              </button>
             </div>
           </div>
           <div className="activity-location-map">
-            <p className="activity-location-map--title">Sailing Locations</p>
+            <p className="activity-location-map--title">Kayaking Locations</p>
             <img
               className="activity-location-map--image"
-              src={SailingLocation}
-              alt="sailing map"
+              src={HKHKayak}
+              alt="kayaking map"
             />
             <div className="activity-location-button--container">
-              <Link className="linkToLocations" to={`/dubai`}>
-                <button className="activity-location-button">
-                  Open in Maps
-                </button>
-              </Link>
+              <button
+                role="link"
+                onClick={() => openInNewTab("https://www.google.com/maps")}
+                className="activity-location-button"
+              >
+                Open in Maps
+              </button>
             </div>
           </div>
         </div>
@@ -104,15 +113,17 @@ export default function HongKongPage() {
             <p className="hotels-location-map--title">Hotel Locations</p>
             <img
               className="hotels-location-map--image"
-              src={DubaiHotelLocation}
-              alt="surfing map"
+              src={HKHotels}
+              alt="hotels map"
             />
             <div className="activity-location-button--container">
-              <Link className="linkToLocations" to={`/dubai`}>
-                <button className="activity-location-button">
-                  Open in Maps
-                </button>
-              </Link>
+              <button
+                role="link"
+                onClick={() => openInNewTab("https://www.google.com/maps")}
+                className="activity-location-button"
+              >
+                Open in Maps
+              </button>
             </div>
           </div>
         </div>

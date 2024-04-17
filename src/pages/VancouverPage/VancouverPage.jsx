@@ -19,8 +19,13 @@ import SailingLocation from "../../assets/images/dubai-sailing-map.png";
 import DubaiHotelLocation from "../../assets/images/dubai-hotels-map.png";
 
 export default function VancouverPage() {
-  const backgroundImage = "linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(" + Vancouver + ")";
-
+  const backgroundImage =
+    "linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(" +
+    Vancouver +
+    ")";
+  const openInNewTab = (url) => {
+    window.open(url, "_blank", "noreferrer");
+  };
   return (
     <div
       className="location-detail-page--container"
@@ -74,11 +79,13 @@ export default function VancouverPage() {
               alt="surfing map"
             />
             <div className="activity-location-button--container">
-              <Link className="linkToLocations" to={`/dubai`}>
-                <button className="activity-location-button">
-                  Open in Maps
-                </button>
-              </Link>
+              <button
+                role="link"
+                onClick={() => openInNewTab("https://www.google.com/maps")}
+                className="activity-location-button"
+              >
+                Open in Maps
+              </button>
             </div>
           </div>
           <div className="activity-location-map">
@@ -89,11 +96,13 @@ export default function VancouverPage() {
               alt="sailing map"
             />
             <div className="activity-location-button--container">
-              <Link className="linkToLocations" to={`/dubai`}>
-                <button className="activity-location-button">
-                  Open in Maps
-                </button>
-              </Link>
+              <button
+                role="link"
+                onClick={() => openInNewTab("https://www.google.com/maps")}
+                className="activity-location-button"
+              >
+                Open in Maps
+              </button>
             </div>
           </div>
         </div>
@@ -108,11 +117,13 @@ export default function VancouverPage() {
               alt="surfing map"
             />
             <div className="activity-location-button--container">
-              <Link className="linkToLocations" to={`/dubai`}>
-                <button className="activity-location-button">
-                  Open in Maps
-                </button>
-              </Link>
+              <button
+                role="link"
+                onClick={() => openInNewTab("https://www.google.com/maps")}
+                className="activity-location-button"
+              >
+                Open in Maps
+              </button>
             </div>
           </div>
         </div>

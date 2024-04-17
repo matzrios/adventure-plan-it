@@ -2,134 +2,134 @@
 @use "../../styles/partials/mixins" as *;
 
 .location-detail-page--container {
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-  }
-
-  .location-detail-title--container {
-    position: fixed;
-    left: 6rem;
-    top: 4rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-  .dubai-city-title {
-    color: $white;
-    font-size: 12rem;
-    font-weight: 900;
-  }
-
-  .dubai-country-title {
-    color: $white;
-    font-size: 2.5rem;
-    font-weight: 900;
-    margin-top: -4rem;
-  }
-
-.location-activities-title--container {
-    position: fixed;
-    bottom: 35rem;
-    left: 8rem;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
 }
 
-.location-activities-title{
-    color: $white;
-    font-size: 2rem;
+.location-detail-title--container {
+  position: fixed;
+  left: 6rem;
+  top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.dubai-city-title {
+  color: $white;
+  font-size: 12rem;
+  font-weight: 900;
+}
+
+.dubai-country-title {
+  color: $white;
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-top: -4rem;
+}
+
+.location-activities-title--container {
+  position: fixed;
+  bottom: 35rem;
+  left: 8rem;
+}
+
+.location-activities-title {
+  color: $white;
+  font-size: 2rem;
 }
 
 .location-activities-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    flex-direction: row;
-  }
-  
-  .location-activity-card {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  
-    &--image {
-      height: 10rem;
-      padding-bottom: 1rem;
-    }
-  
-    &--title {
-      color: $white;
-    }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  flex-direction: row;
+}
+
+.location-activity-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &--image {
+    height: 10rem;
+    padding-bottom: 1rem;
   }
 
-  .location-activities-cards--container{
-    position: fixed;
-    bottom: 20rem;
-    left: 8rem;
-  }
-  
-  .activity-location-maps--container{
-    position: fixed;
-    top: 12rem;
-    right: 5rem;
-  }
-
-  .activity-location-maps{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    flex-direction: row;
-  }
-
-  .activity-location-map {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  
-    &--image {
-      height: 10rem;
-    }
-  
-    &--title {
-      color: $white;
-      padding-bottom: 1rem;
-    }
-  }
-
-  .hotels-location-maps--container{
-    position: fixed;
-    bottom: 15rem;
-    right: 10rem;
-  }
-
-  .hotels-location-map{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  
-    &--image {
-      height: 15rem;
-    }
-  
-    &--title {
-      color: $white;
-      padding-bottom: 1rem;
-    }
-  }
-
-  .activity-location-button--container {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    margin-top: 1rem;
-  }
-  
-  .activity-location-button {
-    background-color: $normal-blue;
+  &--title {
     color: $white;
-    height: 40px;
-    width: 140px;
-    border: none;
-    box-sizing: border-box;
   }
+}
+
+.location-activities-cards--container {
+  position: fixed;
+  bottom: 20rem;
+  left: 8rem;
+}
+
+.activity-location-maps--container {
+  position: fixed;
+  top: 12rem;
+  right: 5rem;
+}
+
+.activity-location-maps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  flex-direction: row;
+}
+
+.activity-location-map {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &--image {
+    height: 10rem;
+  }
+
+  &--title {
+    color: $white;
+    padding-bottom: 1rem;
+  }
+}
+
+.hotels-location-maps--container {
+  position: fixed;
+  top: 32rem;
+  right: 10rem;
+}
+
+.hotels-location-map {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &--image {
+    height: 15rem;
+  }
+
+  &--title {
+    color: $white;
+    padding-bottom: 1rem;
+  }
+}
+
+.activity-location-button--container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.activity-location-button {
+  background-color: $normal-blue;
+  color: $white;
+  height: 40px;
+  width: 140px;
+  border: none;
+  box-sizing: border-box;
+}

@@ -14,13 +14,18 @@ import Snowboarding from "../../assets/images/snowboarding.png";
 import Hiking from "../../assets/images/hiking.png";
 import Surfing from "../../assets/images/surfing.png";
 import Sailing from "../../assets/images/sailing.png";
-import SurfingLocation from "../../assets/images/dubai-surfing-map.png";
-import SailingLocation from "../../assets/images/dubai-sailing-map.png";
-import DubaiHotelLocation from "../../assets/images/dubai-hotels-map.png";
+import NisekoSnowboard from "../../assets/images/niseko-maps/niseko-snowboard.png";
+import NisekoSkating from "../../assets/images/niseko-maps/niseko-skating.png";
+import NisekoHotels from "../../assets/images/niseko-maps/niseko-hotels.png";
 
 export default function NisekoPage() {
-  const backgroundImage = "linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0) ), url(" + Niseko + ")";
-
+  const backgroundImage =
+    "linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0) ), url(" +
+    Niseko +
+    ")";
+  const openInNewTab = (url) => {
+    window.open(url, "_blank", "noreferrer");
+  };
   return (
     <div
       className="location-detail-page--container"
@@ -48,52 +53,58 @@ export default function NisekoPage() {
           <div className="location-activity-card">
             <img
               className="location-activity-card--image"
-              src={Surfing}
-              alt="surfing"
+              src={Skating}
+              alt="skating"
             />
-            <p className="location-activity-card--title">Surfing</p>
+            <p className="location-activity-card--title">Skating</p>
           </div>
 
           <div className="location-activity-card">
             <img
               className="location-activity-card--image"
-              src={Sailing}
-              alt="sailing"
+              src={Snowboarding}
+              alt="snowboarding"
             />
-            <p className="location-activity-card--title">Sailing</p>
+            <p className="location-activity-card--title">Snowboarding</p>
           </div>
         </div>
       </div>
       <div className="activity-location-maps--container">
         <div className="activity-location-maps">
           <div className="activity-location-map">
-            <p className="activity-location-map--title">Surfing Locations</p>
+            <p className="activity-location-map--title">Skating Locations</p>
             <img
               className="activity-location-map--image"
-              src={SurfingLocation}
+              src={NisekoSkating}
               alt="surfing map"
             />
             <div className="activity-location-button--container">
-              <Link className="linkToLocations" to={`/dubai`}>
-                <button className="activity-location-button">
-                  Open in Maps
-                </button>
-              </Link>
+              <button
+                role="link"
+                onClick={() => openInNewTab("https://www.google.com/maps")}
+                className="activity-location-button"
+              >
+                Open in Maps
+              </button>
             </div>
           </div>
           <div className="activity-location-map">
-            <p className="activity-location-map--title">Sailing Locations</p>
+            <p className="activity-location-map--title">
+              Snowboarding Locations
+            </p>
             <img
               className="activity-location-map--image"
-              src={SailingLocation}
+              src={NisekoSnowboard}
               alt="sailing map"
             />
             <div className="activity-location-button--container">
-              <Link className="linkToLocations" to={`/dubai`}>
-                <button className="activity-location-button">
-                  Open in Maps
-                </button>
-              </Link>
+              <button
+                role="link"
+                onClick={() => openInNewTab("https://www.google.com/maps")}
+                className="activity-location-button"
+              >
+                Open in Maps
+              </button>
             </div>
           </div>
         </div>
@@ -104,15 +115,17 @@ export default function NisekoPage() {
             <p className="hotels-location-map--title">Hotel Locations</p>
             <img
               className="hotels-location-map--image"
-              src={DubaiHotelLocation}
+              src={NisekoHotels}
               alt="surfing map"
             />
             <div className="activity-location-button--container">
-              <Link className="linkToLocations" to={`/dubai`}>
-                <button className="activity-location-button">
-                  Open in Maps
-                </button>
-              </Link>
+              <button
+                role="link"
+                onClick={() => openInNewTab("https://www.google.com/maps")}
+                className="activity-location-button"
+              >
+                Open in Maps
+              </button>
             </div>
           </div>
         </div>
