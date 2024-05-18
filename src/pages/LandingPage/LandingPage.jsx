@@ -7,7 +7,7 @@ export default function LandingPage() {
     <div className="landing-page">
       <div className="logo--container">
         <div className="logo">
-          <h1 className="logo__text">Adventure Plant-It</h1>
+          <h1 className="logo__text">Adventure Plan-It</h1>
         </div>
       </div>
 
